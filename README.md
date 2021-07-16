@@ -6,6 +6,7 @@ How to use the app:
 - Start the Server by running the ServerLauncher;
 - Start the Chat by running the Application;
 - You can run the Application multiple times in a row to simulate different clients;
+- You can also run the app in the terminal using netcat.
 
 Open to criticism on my Java, code architecture and organization and documentation skills! 
 
