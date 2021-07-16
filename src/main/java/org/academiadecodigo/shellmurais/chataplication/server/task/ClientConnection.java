@@ -106,7 +106,7 @@ public class ClientConnection implements Runnable{
      */
     private void listenToMessages(BufferedReader messageReader) {
         try {
-            while(clientSocket.isClosed()) {
+            while(!clientSocket.isClosed()) {
                 String message = messageReader.readLine();
 
                 Command.getFromString(message).getHandler().handle(server, this, message);
