@@ -1,0 +1,9 @@
+org.academiadecodigo.shellmurais.chataplication
+org.academiadecodigo.shellmurais.chataplication.brain
+org.academiadecodigo.shellmurais.chataplication.client
+org.academiadecodigo.shellmurais.chataplication.client.task
+org.academiadecodigo.shellmurais.chataplication.menu
+org.academiadecodigo.shellmurais.chataplication.server
+org.academiadecodigo.shellmurais.chataplication.server.command
+org.academiadecodigo.shellmurais.chataplication.server.task
+org.academiadecodigo.shellmurais.chataplication.utils
