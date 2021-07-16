@@ -69,8 +69,9 @@ public class Brain {
      * @see Brain#startClient()
      */
     public void logIn(){
-        if(logInMenu.start()){
-            startClient();
+        while(!logInMenu.start()){
+            menu.start();
         }
+        startClient();
     }
 }
