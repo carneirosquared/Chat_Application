@@ -36,6 +36,7 @@ public class LogInMenu {
      * @return true if credentials are correct
      */
     public boolean start() {
+        int tries = 0;
         openUserInputStreams();
 
         String userInputName = prompt.getUserInput(username);
@@ -43,6 +44,10 @@ public class LogInMenu {
 
         if (!userDetails.containsKey(userInputName)) {
             System.out.println(Messages.REGISTER);
+            tries++;
+        }
+        if(tries > 3){
+            return false;
         }
 
         return checkIfPasswordMatch(userInputName, userInputPassword);
